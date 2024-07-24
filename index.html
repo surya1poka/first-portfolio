@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURYA</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav {
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: space-around; 
+            padding: 14px 0;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            flex-grow: 1; 
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h1 {
+            width: 100%;
+            background-color: gray; 
+            color: white; 
+            padding: 50px;
+            text-align: center;
+            margin: 0;
+            position: relative;
+        }
+        .circle-image {
+            width: 100px; 
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            left: 50px;
+            top: 50%; 
+            transform: translateY(-50%); 
+        }
+        section {
+            width: 80%;
+            padding: 20px;
+            background-color: white;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        ul {
+            list-style-type: disc; 
+            padding-left: 20px; 
+        }
+        .resume-heading {
+            text-align: left;
+            color: #333;
+            margin-bottom: 20px; 
+        }
+        .resume-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .resume-link:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            width: 100%;
+            background-color: #007bff; 
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .toggle-button {
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            border: 2px solid white; /* White border to make the button stand out */
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background 0.3s;
+        }
+        .night-mode {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        .night-mode section {
+            background-color: #444;
+        }
+        .night-mode table th {
+            background-color: #555;
+        }
+        .night-mode nav {
+            background-color: #222;
+        }
+        .night-mode nav a {
+            color: #ddd;
+        }
+        .night-mode footer {
+            background-color: #222; 
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="pic.jpg.jpeg" alt="Image" class="circle-image">
+        Student Portfolio
+    </h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>I am Surya Poka, a 3rd year CSE student at SRM AP.</p>
+        <p>My goal is to become a full-stack developer.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Examination</th>
+                <th>Institute</th>
+                <th>Year</th>
+                <th>Grade/Percentage</th>
+            </tr>
+            <tr>
+                <td>10th Grade</td>
+                <td>Your School Name</td>
+                <td>Year of Passing</td>
+                <td>Percentage/Grade</td>
+            </tr>
+            <tr>
+                <td>12th Grade</td>
+                <td>Your School Name</td>
+                <td>Year of Passing</td>
+                <td>Percentage/Grade</td>
+            </tr>
+            <tr>
+                <td>Undergraduate</td>
+                <td>SRM AP</td>
+                <td>Expected Year of Graduation</td>
+                <td>CGPA/Percentage</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Data Structures</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>DBMS</li>
+            <li>Digital Marketing</li>
+            <li>Good Communication Skills</li>
+            <li>Team Worker</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>These are the projects I worked on during my university.</p>
+        <ul>
+            <li><a href="project1.pdf" target="_blank">Project 1</a></li>
+            <li><a href="project2.pdf" target="_blank">Project 2</a></li>
+            <li><a href="project3.pdf" target="_blank">Project 3</a></li>
+            <li><a href="project4.pdf" target="_blank">Project 4</a></li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>
+            <a href="resume.docx" class="resume-link" target="_blank">Download Resume</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>@2024 Student Portfolio</p>
+        <button class="toggle-button" onclick="toggleMode()"></button>
+    </footer>
+
+    <!-- JavaScript for day/night mode toggle -->
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('night-mode');
+        }
+    </script>
+</body>
+</html>
